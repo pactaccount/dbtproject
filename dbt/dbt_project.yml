@@ -32,5 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   build_mau:
   +materialized: view
-  
+  output:
+   +materialized: table
+  input:
+   +materialized: ephemeral
 
